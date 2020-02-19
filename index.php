@@ -343,7 +343,7 @@
 
     configure() {
       let defaults = {
-        darkMode: false,
+        darkMode: true,
         maxHistories: 30, // maximum number of histories to keep.
         historyExcerptLength: 22, // history excerpt length before truncating.
       };
