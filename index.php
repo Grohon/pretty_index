@@ -816,7 +816,7 @@ class Pi {
       phpinfo();
       exit;
     } else if(!empty($_POST['code-box']) && isset($_POST['operation'])) {
-      $code = base64_decode($_POST['code-box']);
+      $code = base64_decode( strtr( $_POST['code-box'], ' ', '+')) ;
       $operation = $_POST['operation'];
       ob_start();
       switch ($operation) {
